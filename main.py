@@ -3,12 +3,13 @@ import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 # --------------------------------------------------INFROMATION--------------------------------------------------------
-CLIENT_ID = "8ac9206c846147d084af4f1ef1efd91e"
-CLIENT_SECRET = "19039432a6254aecb20ca0536f7fc198"
+# from spotipy
+CLIENT_ID = "client id"
+CLIENT_SECRET = "client secret"
 REDIRECT_URI = "http://example.com"
-USERNAME = "31dclm7ctwrqek4bsbvcfgh4nl4q"
+USERNAME = "username"
 SCOPE = "playlist-modify-public"
-access_token = "BQDYdfQEu5fO6xGi4h34hL-haffMRVL_rU4CspedLIXzU5chVTH28VyAt4meG6kVWoBT-5Uc_0Pk_yGY2JuyqGsp0vT2RK9w7Oa2dbm1hkLtFVWsPVM"
+access_token = "token"
 # ------------------------------------------------GETTING HOLD OF SONGS------------------------------------------------
 user_date = input("What year would you want to travel to? "
                   "Type in the answer in this format YYYY-MM-DD):")
@@ -69,6 +70,3 @@ if track_uris:
     print(f"Tracks added to playlist '{my_playlist}'")
 else:
     print("No tracks to add to the playlist.")
-
-
-
